@@ -1,61 +1,127 @@
-/* Estilos generales */
+/* Estilos globales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #f2f2f2;
+    background-color: #121212;
+    color: #f5f5f5;
 }
 
-/* Encabezado */
+/* Header */
 header {
-    background-color: #ff4747;
+    background: linear-gradient(to right, #ff4747, #ff7979);
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Botón */
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-button:hover {
-    background-color: #45a049;
+.header-content p {
+    font-size: 1.2rem;
 }
 
-/* Tabla */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #fff;
-}
-
-th, td {
+/* Navegación */
+nav {
+    background-color: hsl(0, 100%, 58%);
     padding: 10px;
+    
     text-align: center;
-    background-color: #292929;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ff7979;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Secciones */
+.content-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-bottom: 1px solid #444;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Integrantes */
+.members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    margin: 10px;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff7979;
 }
 
 /* Galería */
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .gallery img {
     width: 300px;
     height: auto;
-    border-radius: 10px;
     border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* Contacto */
+.contact-link {
+    display: inline-block;
+    background-color: #ff7979;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contact-link:hover {
+    background-color: #ff4747;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #292929;
+    padding: 20px;
+    color: #fff;
 }
