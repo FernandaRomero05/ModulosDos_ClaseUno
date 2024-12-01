@@ -14,94 +14,48 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+/* Botón */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 5px 0;
+button:hover {
+    background-color: #45a049;
 }
 
-/* Barra de navegación */
-nav {
-    background-color: #333;
-    padding: 10px 0;
+/* Tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 10px;
     text-align: center;
+    background-color: #292929;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Galería */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #ff4747;
-}
-
-/* Secciones principales */
-main {
-    padding: 20px;
-}
-
-/* Colores de fondo por sección */
-section#sobre-la-banda {
-    background-color: #292929; /* Gris oscuro */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section#integrantes {
-    background-color: #3a3a3a; /* Gris más claro */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section#discografia {
-    background-color: #4CAF50; /* Verde */
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section#galeria {
-    background-color: #1a1a1a; /* Negro */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section#contacto {
-    background-color: #ff4747; /* Rojo intenso */
-    padding: 20px;
-    color: #fff;
-    border-radius: 8px;
-}
-
-/* Galería de imágenes */
-section img {
-    margin: 10px;
-    border-radius: 8px;
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
     border: 2px solid #fff;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
